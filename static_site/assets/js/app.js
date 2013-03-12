@@ -4,19 +4,6 @@ $(document).ready(function(){
   var letters    = ["alpha","beta","gamma", "delta", "epsilon", "zeta"];
   var def_letter = letters[0];
 
-  function apply_detail(detail){
-    var detail_class = "." + detail;
-
-    $(".switcher").css({'border':'none'});
-    $(detail_class).css({'border-width':'9px', 'border-style':'solid', 'border-color':'red'});
-
-    $("#dynamic_showcase").attr({
-      src: "assets/"+ detail +".png",
-      title: "jQuery",
-      alt: "jQuery Logo"
-    });
-  };
-
   function get_detail_param_from_url(){
     var value = $.url().param('detail');
 
@@ -32,15 +19,28 @@ $(document).ready(function(){
       }
   }; 
 
+  function apply_detail(detail){
+    var detail_class = "." + detail;
 
-  var detail = get_detail_param_from_url();
+    $(".switcher").removeClass('detail_active');
+    $(detail_class).addClass('detail_active');
 
-  apply_detail(detail);
+    $("#dynamic_showcase").attr({
+      src: "assets/"+ detail +".png",
+      title: "jQuery",
+      alt: "jQuery Logo"
+    });
+  };
 
   $(".switcher").click(function() {
     selected = $(this).attr('class').split(/\s+/)[0];
     apply_detail(selected);
   });
+
+  var detail = get_detail_param_from_url();
+  apply_detail(detail);
+
+
 
 });
 

@@ -14,9 +14,10 @@ body {
   padding-right: 50px;
 }
 
-.active{
+.detail_active{
   border: 2px red solid;
 }
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
