@@ -8,7 +8,9 @@ ex: includes/_you_form_here.html
 ```
 Including this partial will give you the pure form.
 ```
-<!-- @include _your_form_here -->
+<div>
+  <!-- @include _your_form_here -->
+</div>
 ```
 
 THIS MUST BE DONE IF YOU CHANGE THE FORM OR DOC. MAKE SURE YOU TEST THIS BEFORE DEPLOYING.
