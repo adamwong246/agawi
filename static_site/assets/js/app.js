@@ -1,10 +1,11 @@
 $(document).ready(function(){
+  
+  // Turn carousel on
   $('.carousel').carousel();
 
-  function onytplayerStateChange(newState) {
-    alert("Player's new state: " + newState);
-  }
+  // $('form').addClass('detail_active');
 
+  // "Flavor" switching on the the product_detail page
   var letters    = ["alpha","beta","gamma", "delta", "epsilon", "zeta"];
   var def_letter = letters[0];
 

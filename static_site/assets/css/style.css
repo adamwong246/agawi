@@ -1,6 +1,5 @@
 /* Write your CSS! */
-
-/* @include normalize */  
+  
 /* @include bootstrap.min.css */
 /* @include bootstrap-responsive.min.css */
 
@@ -39,6 +38,10 @@ body {
     background-size: 72px 72px;
   }
 
+}
+
+form.form-inline div, form.form-inline ul{
+  display: inline-table;
 }
 
 .flex-video {
