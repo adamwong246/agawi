@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $('.carousel').carousel();
 
+  function onytplayerStateChange(newState) {
+    alert("Player's new state: " + newState);
+  }
+
   var letters    = ["alpha","beta","gamma", "delta", "epsilon", "zeta"];
   var def_letter = letters[0];
 
