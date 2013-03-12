@@ -7,7 +7,7 @@ $(document).ready(function(){
   function get_detail_param_from_url(){
     var value = $.url().param('detail');
 
-    if ($.inArray(value, letters) > -1)
+    if ($.inArray(value, def_letter) > -1)
       {
 
         return value;
@@ -21,15 +21,23 @@ $(document).ready(function(){
 
   function apply_detail(detail){
     var detail_class = "." + detail;
+    var detail_id = "#" + detail + "_content";
+
+    // debugger;
+
+    console.log(detail_id);
+
+    $('.dynamic').hide();
+    $(detail_id).show();
 
     $(".switcher").removeClass('detail_active');
     $(detail_class).addClass('detail_active');
 
-    $("#dynamic_showcase").attr({
-      src: "assets/"+ detail +".png",
-      title: "jQuery",
-      alt: "jQuery Logo"
-    });
+    // $("#dynamic_showcase").attr({
+    //   src: "assets/"+ detail +".png",
+    //   title: "jQuery",
+    //   alt: "jQuery Logo"
+    // });
   };
 
   $(".switcher").click(function() {
@@ -38,7 +46,7 @@ $(document).ready(function(){
   });
 
   var detail = get_detail_param_from_url();
-  apply_detail(detail);
+  apply_detail(detail); 
 
 
 
