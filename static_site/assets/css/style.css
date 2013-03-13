@@ -13,6 +13,13 @@ body {
   padding-right: 50px;
 }
 
+
+a.small{
+  height: 200px;
+  weight: 200px;
+}
+
+
 .detail_active{
   border: 2px red solid;
 }

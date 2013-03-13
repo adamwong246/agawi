@@ -6,52 +6,52 @@ $(document).ready(function(){
   // $('form').addClass('detail_active');
 
   // "Flavor" switching on the the product_detail page
-  var letters    = ["alpha","beta","gamma", "delta", "epsilon", "zeta"];
-  var def_letter = letters[0];
+  // var letters    = ["alpha","beta","gamma", "delta", "epsilon", "zeta"];
+  // var def_letter = letters[0];
 
-  function get_detail_param_from_url(){
-    var value = $.url().param('detail');
+  // function get_detail_param_from_url(){
+  //   var value = $.url().param('detail');
 
-    if ($.inArray(value, def_letter) > -1)
-      {
+  //   if ($.inArray(value, def_letter) > -1)
+  //     {
 
-        return value;
-      }
-    else
-      {
+  //       return value;
+  //     }
+  //   else
+  //     {
 
-        return def_letter;
-      }
-  }; 
+  //       return def_letter;
+  //     }
+  // }; 
 
-  function apply_detail(detail){
-    var detail_class = "." + detail;
-    var detail_id = "#" + detail + "_content";
+  // function apply_detail(detail){
+  //   var detail_class = "." + detail;
+  //   var detail_id = "#" + detail + "_content";
 
-    // debugger;
+  //   // debugger;
 
-    console.log(detail_id);
+  //   console.log(detail_id);
 
-    $('.dynamic').hide();
-    $(detail_id).show();
+  //   $('.dynamic').hide();
+  //   $(detail_id).show();
 
-    $(".switcher").removeClass('detail_active');
-    $(detail_class).addClass('detail_active');
+  //   $(".switcher").removeClass('detail_active');
+  //   $(detail_class).addClass('detail_active');
 
-    // $("#dynamic_showcase").attr({
-    //   src: "assets/"+ detail +".png",
-    //   title: "jQuery",
-    //   alt: "jQuery Logo"
-    // });
-  };
+  //   // $("#dynamic_showcase").attr({
+  //   //   src: "assets/"+ detail +".png",
+  //   //   title: "jQuery",
+  //   //   alt: "jQuery Logo"
+  //   // });
+  // };
 
-  $(".switcher").click(function() {
-    selected = $(this).attr('class').split(/\s+/)[0];
-    apply_detail(selected);
-  });
+  // $(".switcher").click(function() {
+  //   selected = $(this).attr('class').split(/\s+/)[0];
+  //   apply_detail(selected);
+  // });
 
-  var detail = get_detail_param_from_url();
-  apply_detail(detail); 
+  // var detail = get_detail_param_from_url();
+  // apply_detail(detail); 
 
 
 
