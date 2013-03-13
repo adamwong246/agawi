@@ -45,15 +45,48 @@ $(document).ready(function(){
   //   // });
   // };
 
-  // $(".switcher").click(function() {
-  //   selected = $(this).attr('class').split(/\s+/)[0];
-  //   apply_detail(selected);
+  $(".switcher").click(function() {
+    selected = '#' + $(this).attr('class').split(/\s+/)[0] + "_content";
+
+    $('html, body').animate({
+         scrollTop: $(selected).offset().top
+     }, 2000);
+
+    // $('body').scrollTo( selected );
+    // alert(selected);
+    // apply_detail(selected);
+  });
+
+  // $(window).resize(function() {
+  //   $('.responsive_placholder').text(
+  //     $('.responsive_placholder').width()
+  //     + " px by " + 
+  //     $('.responsive_placholder').height()
+  //     + "px");
   // });
 
-  // var detail = get_detail_param_from_url();
-  // apply_detail(detail); 
+  // $("")
 
 
-
+  jQuery("#youtube-player-container").tubeplayer({
+    width: 600, // the width of the player
+    height: 450, // the height of the player
+    allowFullScreen: "true", // true by default, allow user to go full screen
+    initialVideo: "QH2-TGUlwu4", // the video that is loaded into the player
+    preferredQuality: "default",// preferred quality: default, small, medium, large, hd720
+    // onPlay: function(id){}, // after the play method is called
+    // onPause: function(){}, // after the pause method is called
+    // onStop: function(){}, // after the player is stopped
+    // onSeek: function(time){}, // after the video has been seeked to a defined point
+    // onMute: function(){}, // after the player is muted
+    // onUnMute: function(){}, // after the player is unmuted
+    onPlayerPlaying: function(){
+      $('.carousel').carousel('pause');
+    },
+    onPlayerPaused: function(){
+      $('.carousel').carousel('cycle');
+    }
+  });
 });
+
 

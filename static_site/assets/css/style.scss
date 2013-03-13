@@ -3,6 +3,27 @@
 /* @include bootstrap.min.css */
 /* @include bootstrap-responsive.min.css */
 
+//temp
+// body{
+//   background: black;
+// }
+// img{
+//   border: 1px red solid;
+// }
+// div{
+//   &.row-fluid{
+//     // border: 1px blue solid;
+//     background: blue;
+//     border: 1px black solid;
+//   }
+//   &.span1, &.span2, &.span3, &.span4, &.span5, &.span6, &.span7, &.span8, &.span9, &.span10, &.span11, &.span12{
+//     background: green;
+//     border: 1px white solid;
+//   } 
+// }
+
+
+
 html {
   height: 100%;
 }
@@ -13,10 +34,36 @@ body {
   padding-right: 50px;
 }
 
+.center_content{
+  // margin: 0 auto; 
+  text-align: center; 
+}
 
-a.small{
+#product_intro_page{
+  .padded{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+div.interior_form_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  
+
+
+  .interior_form {
+    position: absolute;
+    bottom:0;
+    right:0;
+
+  }
+}
+
+img.detail_image_medium{
   height: 200px;
-  weight: 200px;
+  width: 200px;
 }
 
 
