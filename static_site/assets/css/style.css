@@ -40,6 +40,10 @@ body {
 
 }
 
+a.more_link{
+  float: right;
+}
+
 form.form-inline div, form.form-inline ul{
   display: inline-table;
 }
