@@ -7,9 +7,9 @@
 // body{
 //   background: black;
 // }
-// img{
-//   border: 1px red solid;
-// }
+img{
+  border: 1px red solid;
+}
 
 // div{
 //   &.row-fluid{
@@ -22,20 +22,19 @@
 //   } 
 // }
 
-.padded_left{
-  padding-left: 150px;
-}
-.padded_right{
-  padding-right: 150px;
+
+.row-fluid{
+  margin-bottom: 20px;
 }
 
 html {
   height: 100%;
 }
 
-.constrained {
-  /*background: url(apple-touch-icon.png) no-repeat center center;*/
+.padded_left {
   padding-left: 50px;
+}
+.padded_right {
   padding-right: 50px;
 }
 
@@ -48,12 +47,12 @@ html {
   text-align: center; 
 }
 
-#product_intro_page{
-  .padded{
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
+// #product_intro_page{
+//   .padded{
+//     padding-left: 75px;
+//     padding-right: 75px;
+//   }
+// }
 
 #intro_floating_header{
   top: 0;
