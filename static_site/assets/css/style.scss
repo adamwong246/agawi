@@ -31,13 +31,6 @@ html {
   height: 100%;
 }
 
-.padded_left {
-  padding-left: 50px;
-}
-.padded_right {
-  padding-right: 50px;
-}
-
 .panel{
   background-color: lightgray;
 }
@@ -47,17 +40,12 @@ html {
   text-align: center; 
 }
 
-// #product_intro_page{
-//   .padded{
-//     padding-left: 75px;
-//     padding-right: 75px;
-//   }
-// }
 
 #intro_floating_header{
   top: 0;
   left: 0;
   z-index: 1;
+  margin: 15px;
 }
 
 #detail_floating_form{
