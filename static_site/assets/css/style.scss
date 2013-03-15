@@ -3,16 +3,16 @@
 /* @include bootstrap.min.css */
 /* @include bootstrap-responsive.min.css */
 
-//temp
+// temp
 // body{
 //   background: black;
 // }
 // img{
 //   border: 1px red solid;
 // }
+
 // div{
 //   &.row-fluid{
-//     // border: 1px blue solid;
 //     background: blue;
 //     border: 1px black solid;
 //   }
@@ -22,16 +22,25 @@
 //   } 
 // }
 
-
+.padded_left{
+  padding-left: 150px;
+}
+.padded_right{
+  padding-right: 150px;
+}
 
 html {
   height: 100%;
 }
 
-body {
+.constrained {
   /*background: url(apple-touch-icon.png) no-repeat center center;*/
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.panel{
+  background-color: lightgray;
 }
 
 .center_content{
@@ -46,17 +55,27 @@ body {
   }
 }
 
-div.interior_form_container {
+#intro_floating_header{
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#detail_floating_form{
+  bottom:0;
+  right:0;
+}
+
+div.relative_wrapper {
   position: relative;
   height: 100%;
   width: 100%;
   
 
 
-  .interior_form {
+  .absolute_content {
     position: absolute;
-    bottom:0;
-    right:0;
+
 
   }
 }
