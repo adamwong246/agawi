@@ -5,6 +5,8 @@ http://www.immersionmedia.com/blog/customizing-and-styling-google-forms/
 The Agawi static website is backed by Google docs to store data gathered with Google forms. In order to get a seamless user experience, you cannot use embed the google forms iframe directly. Instead, after creating the google form and spreadsheet, "View the live form." View the source of this page and you will find a html snippet <form>...</form>. 
 
 Copy this into a partial file in the includes folder of the project. The file must begin with an underscore.
+
+Now modify this form to taste. Remove labels, and hint text, change the input.submit to a button. 
 ```
 ex: includes/_you_form_here.html
 ```
