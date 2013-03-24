@@ -22,32 +22,114 @@
 //   } 
 // }
 
+
+// Roboto Medium 40 px text, 48 line height
+h1{
+  // font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  } 
+// H2: Roboto Medium 30 px text, 38 px line height
+h2{
+  // font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  color: lightgray;
+}
+// H3: Roboto Bold 24 text, 32 line height
+h3{
+  // font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 header{
   background-color: darkgray;
 }
-.row-fluid{
-  margin-bottom: 20px;
+#logo{
+  width:150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#slogan{
+  left: 175px;
+  top:15px;
+  margin-top:15px;
+  margin-left: 20px;
+}
+header .links{
+  padding-top:20px;
+}
+
+section{
+  background-color: #D4D4D4;
+}
+
+section{
+  .span1, .span2, .span3, .span4, .span5, .span6{
+    background-color: #F6F6F6;
+  }
+
+  .content{
+    box-shadow: 6px 6px 4px #000;
+  }
 }
 
 html {
   height: 100%;
+  color: #4F4F4F !important;
 }
-
-.panel{
-  background-color: red;
+body{
+  font-family: 'Roboto', sans-serif;
 }
+.red{ background-color: red; }
+.gray{ background-color: darkgray; } 
 
 .center_content{
-  // margin: 0 auto; 
-  text-align: center; 
+  margin: 0 auto; 
+  // text-align: center; 
 }
+
+.center_text{
+  text-align: center;
+}
+
+.spacer{
+  height: 30px;
+}
+
+#tell_me_plus_form{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+padding-right{
+  margin-right: 20px;
+}
+
+#intro_page > .row-fluid {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  > div{
+    border: 1px black solid;
+  } 
+}
+// section > .row-fluid{
+//   width: 1500px;
+// }
+
 
 
 #intro_floating_header{
   top: 0;
   left: 0;
   z-index: 1;
-  margin: 15px;
+  opacity: 0.8;
+  color: white;
+  margin-top: 30px;
+  // padding-right: 30px;
 }
 
 #detail_floating_form{
@@ -59,13 +141,8 @@ div.relative_wrapper {
   position: relative;
   height: 100%;
   width: 100%;
-  
-
-
   .absolute_content {
     position: absolute;
-
-
   }
 }
 

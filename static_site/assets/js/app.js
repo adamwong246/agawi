@@ -70,10 +70,10 @@ $(document).ready(function(){
 
   jQuery("#youtube-player-container").tubeplayer({
     width: 600, // the width of the player
-    height: 450, // the height of the player
+    height: 300, // the height of the player
     allowFullScreen: "true", // true by default, allow user to go full screen
-    initialVideo: "QH2-TGUlwu4", // the video that is loaded into the player
-    preferredQuality: "default",// preferred quality: default, small, medium, large, hd720
+    initialVideo: "wdcrWmR67fo", // the video that is loaded into the player
+    preferredQuality: "hd720",// preferred quality: default, small, medium, large, hd720
     // onPlay: function(id){}, // after the play method is called
     // onPause: function(){}, // after the pause method is called
     // onStop: function(){}, // after the player is stopped
