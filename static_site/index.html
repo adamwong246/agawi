@@ -1,6 +1,6 @@
 <!-- @include _header -->
 
-  <section id="intro_page">
+  <section id="index_page">
     <div class="row-fluid center_content">
       <div class="offset1 span5 paper">
         <div class="row-fluid">
@@ -11,25 +11,40 @@
               http://twitter.github.com/bootstrap/javascript.html#carousel -->
               <div id="carousel" class="carousel slide relative_wrapper "><!-- class of slide for animation -->
                 
-                <div class="absolute_content red_banner left center_text">
-                  <h3>Join the Agawi - Twitch TV happy hour at GDC</h3>
 
-                </div>
 
                 <div class="carousel-inner center_content">
                   <div class="item active center_content"><!-- class of active since it's the first item -->
                     <img src="<!-- @path party_866x484.png -->" />
+                    <div class="carousel-caption">
+                      <a href="http://www.gdconf.com/events/partiesnetworking.html">
+                        <h3>
+                          Join the Agawi - Twitch TV happy hour at
+                          <img src="<!-- @path GDC_logo_164x56.png -->" id="gdc_logo"/>
+                        </h3>                
+                      </a>
+                    </div>
 
                   </div>
+
                   <div class="item center_content">
                     <img src="<!-- @path dev_logos_866x484.png -->" />
-
+                    <div class="carousel-caption">
+                      <a href="http://www.gdconf.com/events/partiesnetworking.html">
+                      <h3>
+                        Join the Agawi - Twitch TV happy hour at
+                        <img src="<!-- @path GDC_logo_164x56.png -->" id="gdc_logo"/>
+                      </h3>                
+                  </a>
+                    </div>
                   </div>
+
+
                 </div><!-- /.carousel-inner -->
                 <!--  Next and Previous controls below
                       href values must reference the id for this carousel -->
-                  <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-                  <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
               </div><!-- /.carousel -->
 
             <div class="row-fluid">
