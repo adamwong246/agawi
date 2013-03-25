@@ -122,7 +122,23 @@ padding-right{
 #intro_page > .row-fluid {
   padding-top: 25px;
   padding-bottom: 25px;
- 
+}
+
+#product_detail_page {
+  #daedlic_pic{
+    height: 548px;
+    width: auto;
+  }
+
+  #q_and_a{
+    overflow:auto;
+    height: 548px; //the height of the accompanying picture
+  }
+
+  .row-fluid.paper{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .red_banner{
@@ -154,10 +170,7 @@ padding-right{
   right:0;
 }
 
-#q_and_a{
-  overflow:auto;
-  height: 450px; //the height of the accompanying picture
-}
+
 
 .relative_wrapper {
   position: relative;
