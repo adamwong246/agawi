@@ -86,14 +86,19 @@ section{
 
 html {
   height: 100%;
-  color: #4F4F4F !important;
+  color: #4F4F4F;
 }
 body{
   font-family: 'Roboto', sans-serif;
 }
-.red{ background-color: red; }
-.gray{ background-color: darkgray; } 
 
+nav a{
+  color: #4F4F4F !important;
+}
+
+div.footer a{
+  color: #4F4F4F !important;
+}
 .center_content{
   margin: 0 auto; 
   // text-align: center; 
